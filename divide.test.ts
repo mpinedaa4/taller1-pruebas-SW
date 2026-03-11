@@ -28,7 +28,7 @@ describe("divide", () => {
   });
 
   it("returns an error when denominator is 0", () => {
-    expect(window.divide(5, 0)).toThrow('Error: división por cero');
+    expect(() => window.divide(0, 0)).toThrow("Error: división por cero");
   });
 });
 
