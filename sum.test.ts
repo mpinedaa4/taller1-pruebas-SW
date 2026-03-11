@@ -23,6 +23,10 @@ describe("sum", () => {
     expect(window.sum(-1, 1)).toBe(0);
   });
 
+  it("adds two negative numbers", () => {
+    expect(window.sum(-3, -2)).toBe(-5);
+  });
+
   it("returns 0 when both are 0", () => {
     expect(window.sum(0, 0)).toBe(0);
   });
